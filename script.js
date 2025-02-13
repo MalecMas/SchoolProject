@@ -64,7 +64,7 @@ function checkCollision() {
 
 function gameOver() {
     clearInterval(gameLoopInterval);
-    alert('Game Over! Your score: ' + score);
+    //alert('Game Over! Your score: ' + score);
     snake = [{ x: 10 * gridSize, y: 10 * gridSize }];
     food = { x: 15 * gridSize, y: 15 * gridSize };
     direction = 'right';
@@ -87,6 +87,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown' && direction !== 'up') direction = 'down';
     if (e.key === 'ArrowLeft' && direction !== 'right') direction = 'left';
     if (e.key === 'ArrowRight' && direction !== 'left') direction = 'right';
+    
     if (e.key === 'w' && direction !== 'down') direction = 'up';
     if (e.key === 's' && direction !== 'up') direction = 'down';
     if (e.key === 'a' && direction !== 'right') direction = 'left';
