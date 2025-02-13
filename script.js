@@ -46,7 +46,7 @@ function draw() {
     ctx.fillRect(food.x, food.y, gridSize, gridSize);
 
     // Draw snake
-    ctx.fillStyle = 'orange';
+    ctx.fillStyle = 'green';
     snake.forEach(segment => {
         ctx.fillRect(segment.x, segment.y, gridSize, gridSize);
     });
