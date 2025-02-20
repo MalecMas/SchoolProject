@@ -42,11 +42,11 @@ function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Draw food
-    ctx.fillStyle = 'green';
+    ctx.fillStyle = 'red';
     ctx.fillRect(food.x, food.y, gridSize, gridSize);
 
     // Draw snake
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = 'green';
     snake.forEach(segment => {
         ctx.fillRect(segment.x, segment.y, gridSize, gridSize);
     });
